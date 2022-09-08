@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'EB Garamond', serif;
+	color: white;
+	background-image: url(https://imagenessupertrending.canalrcn.com/ImgSuperTrending/code-1076536_1920-1.jpg?VersionId=5wKCAB6a.LA2.4qdWJtayFrHr94p5h4x);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 20px;
+
+}
+header {
+    text-align: center;
+    justify-content: center;
+}
+header p {
+    font-size: 30px;
+}
+header label {
+    font-size: 30px;
+}
+
+footer {
+	text-align: center;
+}
+p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+h1 {
+	font-size: 40px;
+}
+hr {
+	width: 50%;
+}
+textarea {
+	width: 100%;
+}
+.container {
+	background-color: #7e7e90;
+	opacity: 0.9;
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+    margin-right: auto;
+    box-shadow: 20px 15px 15px #434459;
+    padding: 20px 30px 20px 30px;
+    margin: 30px auto 15px auto;
+}
+.botones {
+	line-height: 30px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+#name, #email, #number {
+	line-height: 30px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	width: 100%;
+}
+#dropdown {
+	width: 100%;
+	line-height: 30px;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+#submit {
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	width: 100%;
+	border: none;
+	color: white;
+	background-color: #c72050;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+} 
+@media (max-width: 767px) {
+body {
+	font-size: 15px;	
+}
+header p {
+    font-size: 15px;
+}
+header label {
+    font-size: 15px;
+}
+
+footer {
+	text-align: center;
+}
+p {
+    font-size: 15px;
+}
+h1 {
+	font-size: 25px;
+}
+#name, #email, #number {
+font-size: 15px;
+}
+#dropdown {
+line-height: 20px;
+font-size: 15px;
+}
+}

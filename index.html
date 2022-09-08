@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Encuesta sobre busqueda laboral</title>
+  <script src="https://kit.fontawesome.com/38ae1f4b6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">La busqueda de mi primer trabajo de programador</h1>
+      <hr>
+      <p id="description">Te invitamos a que nos cuentes tu experiencia sobre tu primera búsqueda laboral en el mundo IT</p>
+    </header>
+    <main>
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+      <form id="survey-form" action="#">
+        <div class="campos-textos">
+         <label id="name-label">Nombre</label> 
+         <input type="text" id="name" placeholder="Ingresa tu nombre completo" required>
+         <label id="email-label">EMail</label> 
+         <input type="email" id="email" placeholder="Ingresa tu email" required required pattern="+@+">
+         <label id="number-label">Edad</label> 
+         <input type="number" id="number" placeholder="Ingresa tu edad" required min="10" max="99">
+       </div>
+       <div class="dropdown">
+        <p>¿Cual era tu nivel de estudios al iniciar tu primera busqueda laboral como programador?</p>
+        <select id="dropdown" name="Estatus" required>
+          <option disabled selected value>Selecciona tu nivel de tus estudios</option>
+          <option value="universitariocurso">Universitario en curso</option>
+          <option value="universitariocompleto">Universitario completo</option>
+          <option value="tecnicaturacurso">Tecnicatura en curso</option>
+          <option value="tecnicaturacompleto">Tecnicatura completa</option>
+          <option value="cursosindependientes">Cursos de entidades independientes</option>
+          <option value="autodidacta">Autodidacta</option>
+          <option value="otro">Otro</option>
+        </select>       
+       </div>
+       <div class="botones">
+        <p>¿Cuanto duró la busqueda?</p>
+        <label> <input name="tiempobusqueda" value="semanas" type="radio"/>Algunas semanas</label>
+        <br>
+        <label> <input name="tiempobusqueda" value="minmeses" type="radio"/>Menos de 3 meses</label>
+        <br>
+        <label> <input name="tiempobusqueda" value="maxmeses" type="radio"/>Mas de 3 meses</label>
+        <br>
+        <label> <input name="tiempobusqueda" value="buscando" type="radio" checked/>Aun continuo en la busqueda</label>
+       </div>   
+       <div class="botones">
+        <p>¿Que metodos utilizaste para tu busqueda?</p>
+        <label> <input name="tipobusqueda" value="bolsas" type="checkbox"/>Bolsas de empleo</label>
+        <br>
+        <label> <input name="tipobusqueda" value="redes" type="checkbox"/>Redes sociales</label>
+        <br>
+        <label> <input name="tipobusqueda" value="consultoras" type="checkbox"/>Consultoras de recursos humanos</label>
+        <br>
+        <label> <input name="tipobusqueda" value="empresas" type="checkbox"/>Llevando o cargando tu cv en empresas</label>
+        <br>
+        <label> <input name="tipobusqueda" value="otros" type="checkbox"/>Por otros medios</label>
+       </div>   
+      <div>
+        <p>¿Hay algo mas que quieras compartirnos sobre tu experiencia?</p>
+        <textarea type="text" id="comentarios" placeholder="Ingresa tus comentarios adicionales"></textarea>
+      </div>
+      <input type="submit" value="Enviar formulario" id="submit"/>
+      </form>
+    </main>
+    <footer>
+      <p>¡Muchas gracias por compartirnos tu experincia!</p>
+    </footer>
+  </div>
+</body>
+</html>  
